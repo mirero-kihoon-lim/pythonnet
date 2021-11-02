@@ -479,7 +479,7 @@ namespace Python.Runtime
         /// For more information, see the "Extending and Embedding" section
         /// of the Python documentation on www.python.org.
         /// </remarks>
-        internal static IntPtr AcquireLock()
+        public static IntPtr AcquireLock()
         {
             return Runtime.PyGILState_Ensure();
         }
@@ -494,7 +494,7 @@ namespace Python.Runtime
         /// For more information, see the "Extending and Embedding" section
         /// of the Python documentation on www.python.org.
         /// </remarks>
-        internal static void ReleaseLock(IntPtr gs)
+        public static void ReleaseLock(IntPtr gs)
         {
             Runtime.PyGILState_Release(gs);
         }
