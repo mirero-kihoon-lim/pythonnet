@@ -4,6 +4,7 @@
     <TargetFrameworks>net472</TargetFrameworks>
     <OutputPath>bin\</OutputPath>
     <OutputType>Exe</OutputType>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
